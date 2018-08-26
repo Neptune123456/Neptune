@@ -1,0 +1,52 @@
+doctype html
+html
+    head
+        title home
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+        link(rel="stylesheet", href="stylesheets/shopping.css")
+        script(src="javascripts/shopping.js")
+    body
+    .top
+        .top-left
+            a(href="page")
+                img(src="images/l-t-l.svg")
+        .top-title
+            p ZARA CHINA
+        .top-right
+            a()
+                img(src="images/l-t-r.svg")
+    .center
+        .list-title SHOPPING BAG
+            span 2 ITEM
+        table
+            form(action="" method="post" name="myform")
+                tr#product1
+                    td.td1
+                        input(name="cartCheckBox" type="checkbox" value="product1" onclick="selectSingle()")
+                    td.td2
+                        img(src="images/11.jpg" alt="")
+                    td.td3 纽扣饰迷笛裙 磨白色 M（165/78A）$299
+                    td.td4
+                        img(src="images/left.svg" alt="minus" onclick="changeNum('num_1','minus')" class="hand")
+                        input(id="num_1" type="text"  value="1" class="num_input" readonly="readonly")
+                        img(src="images/right.svg" alt="add" onclick="changeNum('num_1','add')"  class="hand")
+                tr#product2
+                    td.td1
+                        input(name="cartCheckBox" type="checkbox" value="product1" onclick="selectSingle()")
+                    td.td2
+                        img(src="images/16.jpg" alt="")
+                    td.td3 口袋饰连衣裙 卡其色 M（165/78A）$299
+                    td.td4
+                        img(src="images/left.svg" alt="minus" onclick="changeNum('num_1','minus')" class="hand")
+                        input(id="num_2" type="text"  value="1" class="num_input" readonly="readonly")
+                        img(src="images/right.svg" alt="add" onclick="changeNum('num_1','add')"  class="hand")
+    .foot
+        .total
+            span TOTAL:$
+                label#total
+        .mode
+            button.btn1 BUY
+            button.btn2 DELETE
+
+
+

@@ -1,0 +1,51 @@
+doctype html
+html
+    head
+        title detail
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+        link(rel="stylesheet", href="stylesheets/detail.css")
+        link(rel="stylesheet", href="stylesheets/css/bootstrap.min.css")
+        script(src="javascripts/js/jquery-3.3.1.js")
+        script(src="javascripts/js/bootstrap.js")
+    body
+    .top
+        .logo
+            .back
+                a(href='page')
+                    img(src='images/l-t-l.svg')
+            .title ZARA
+            .logo-icon
+                a(href='')
+                    img(src='images/shoppingcart.svg', alt='')
+
+    each pro in test
+        .title1
+            p #{pro.name}
+        .center
+            img(src=pro.img)
+            img(src=pro.img1)
+            img(src=pro.img2)
+            img(src=pro.img3)
+            img(src=pro.img4)
+        each pro in test
+            .word
+                p #{pro.inf}
+                p #{pro.style}
+                p #{pro.color}
+    .foot
+        .container
+            .dropup
+                button(class="btn btn-default", data-toggle="dropdown") BUY
+                ul(class="dropdown-menu")
+                    li
+                    a(href='#') XL(175/82A)
+                    li
+                    a(href='#') L(175/78A)
+                    li
+                    a(href='#') M(170/70A)
+                    li
+                    a(href='#') S(165/66A)
+                    li
+                    a(href='#') XS(160/62A)
+        each pro in test
+            span #{pro.price}

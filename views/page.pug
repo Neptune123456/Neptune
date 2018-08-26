@@ -1,0 +1,94 @@
+doctype html
+html
+    head
+        title home
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+        link(rel="stylesheet", href="stylesheets/style.css")
+        link(href="stylesheets/css/bootstrap.min.css", rel="stylesheet")
+        script(src="javascripts/js/jquery-3.3.1.js")
+        script(src="javascripts/js/bootstrap.js")
+        script(src="javascripts/page.js")
+    body
+        .top
+            .logo
+                .title ZARA
+                .logo-icon
+                    a(href='shopping')
+                        img(src='images/shoppingcart.svg', alt='')
+            .search-group
+                .search-icon
+                    a(href='classify')
+                        img(src="images/number.svg", alt="")
+                .search-box
+                    input#search_text(type='text')
+                    span SEARCH
+                #auto_div
+
+    .center
+        .list-group
+            .carousel.slide(id="mycarousel", data-ride="carousel")
+                 .carousel-inner
+                     .item.active
+                         img(src="images/0.jpg", alt="")
+                     .item
+                         img(src="images/1.jpg", alt="")
+                     .item
+                         img(src="images/2.jpg", alt="")
+                     .item
+                         img(src="images/3.jpg", alt="")
+                     .item
+                         img(src="images/4.jpg", alt="")
+                     .item
+                         img(src="images/5.jpg", alt="")
+        .price FREE SHIPPING FOR ORDERS OVER 50 DOLLAR
+        .list-title NEW IN
+            .list
+                a(href='classify')
+                   img(src=result[0].img, alt="")
+        .list-title WOMAN
+            .list
+                a(href='classify')
+                   img(src=result[1].img, alt="")
+        .list-title TRF
+            .list
+                a(href='classify')
+                   img(src=result[2].img, alt="")
+        .list-title MAN
+            .list
+                a(href='classify')
+                   img(src=result[3].img, alt="")
+        .list-title KIDS
+            .list
+                a(href='classify')
+                   img(src=result[4].img, alt="")
+        .list-title SALE
+            .list
+                a(href='classify')
+                   img(src=result[5].img, alt="")
+        .list-title JOIN LIFE
+            .list
+                a(href='classify')
+                   img(src=result[6].img, alt="")
+        .list-title CAMPAIGN
+            .list
+                a(href='classify')
+                   img(src=result[7].img, alt="")
+        //.button
+        //     button#nextPage more
+        //.list-title
+        //    .list
+        //        .more#showNextPage
+
+    .foot
+        .mode
+            a(href='classify')
+                 img(src="images/goods.svg", alt="classify")
+            .mode-t PRODUCTS
+        .mode
+            a(href='login')
+                 img(src="images/login.svg", alt="login")
+            .mode-t MY ACCOUNT
+        .mode
+            a(href='list')
+                 img(src="images/eare.svg", alt="")
+            .mode-t LIST

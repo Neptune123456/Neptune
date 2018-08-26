@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="stylesheets/shopping.css">
+    <script src="javascripts/shopping.js"></script>
+  </head>
+  <body></body>
+  <div class="top">
+    <div class="top-left"><a href="page"><img src="images/l-t-l.svg"></a></div>
+    <div class="top-title">
+      <p>ZARA CHINA</p>
+    </div>
+    <div class="top-right"><a><img src="images/l-t-r.svg"></a></div>
+  </div>
+  <div class="center">
+    <div class="list-title">SHOPPING BAG<span>2 ITEM</span></div>
+    <table>
+      <form action="" method="post" name="myform">
+        <tr id="product1">
+          <td class="td1">
+            <input name="cartCheckBox" type="checkbox" value="product1" onclick="selectSingle()">
+          </td>
+          <td class="td2"><img src="images/11.jpg" alt=""></td>
+          <td class="td3">纽扣饰迷笛裙 磨白色 M（165/78A）$299</td>
+          <td class="td4"><img class="hand" src="images/left.svg" alt="minus" onclick="changeNum('num_1','minus')">
+            <input class="num_input" id="num_1" type="text" value="1" readonly="readonly"><img class="hand" src="images/right.svg" alt="add" onclick="changeNum('num_1','add')">
+          </td>
+        </tr>
+        <tr id="product2">
+          <td class="td1">
+            <input name="cartCheckBox" type="checkbox" value="product1" onclick="selectSingle()">
+          </td>
+          <td class="td2"><img src="images/16.jpg" alt=""></td>
+          <td class="td3">口袋饰连衣裙 卡其色 M（165/78A）$299</td>
+          <td class="td4"><img class="hand" src="images/left.svg" alt="minus" onclick="changeNum('num_1','minus')">
+            <input class="num_input" id="num_2" type="text" value="1" readonly="readonly"><img class="hand" src="images/right.svg" alt="add" onclick="changeNum('num_1','add')">
+          </td>
+        </tr>
+      </form>
+    </table>
+  </div>
+  <div class="foot">
+    <div class="total"><span>TOTAL:$
+        <label id="total"></label></span></div>
+    <div class="mode">
+      <button class="btn1">BUY</button>
+      <button class="btn2">DELETE</button>
+    </div>
+  </div>
+</html>

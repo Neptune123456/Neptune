@@ -1,0 +1,91 @@
+.top{
+    width:99%;
+    height: 50px;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+
+}
+.top-left{
+    float: left;
+    width: 20%;
+    display: inline;
+}
+.top-title{
+    line-height: 2em;
+    font-size: 20px;
+    font-weight: 600;
+}
+.top-title p{
+    display: inline;
+}
+
+.top-right{
+    float: right;
+    width: 20%;
+    display: inline;
+}
+.top-right a{
+    float: right;
+}
+.center{
+    margin-top: 50px;
+    width: 96%;
+    margin-left: auto;
+}
+.list-title{
+    display: inline-grid;
+    margin-bottom: 20px;
+}
+#product1{
+    width: 400px;
+}
+#num_1{
+    width: 25px;
+    text-align: center;
+    border-style: none;
+}
+#num_2{
+    width: 25px;
+    text-align: center;
+    border-style: none;
+}
+.td2 img{
+    width: 150px;
+}
+.td4{
+    display: inline-flex;
+    margin-top: 60px;
+}
+.mode{
+    margin-top: 20px;
+}
+.foot{
+    display: inline;
+}
+.total{
+    display: inline-block;
+    margin-top: 50px;
+}
+.total span{
+    float: right;
+}
+.btn1{
+    width: 48%;
+    height: 40px;
+    display: inline;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.btn2{
+    width: 48%;
+    height: 40px;
+    display: inline;
+    float: right;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+button:hover{
+    background-color: #000;
+    color: #fff;
+}

@@ -1,0 +1,32 @@
+doctype html
+html
+    head
+        title login
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+        link(rel="stylesheet", href="stylesheets/style1.css")
+    body
+        span #{errors}
+        .top
+            .top-left
+                a(href='page')
+                   img(src='images/l-t-l.svg')
+            .top-title
+                p ZARA CHINA
+            .top-right
+                a(href='')
+                   img(src='images/l-t-r.svg')
+
+    .center
+        .register
+            p REGISTERED
+            form(method="post", action="/login")
+                input(class="first-input", type="text", placeholder="E-MAIL", name="username")
+                br
+                input(class="first-input", type="text", placeholder="PASSWORD", name="password")
+                input(class="second-input", type="submit", value="LOGIN")
+            .forget-psw
+                a(href='') FORGET THE PASSWORD?&nbsp&nbsp>
+            .register
+                p REGISTER
+                a(href='register')
+                    input(class="second-input", type="button", value="CREATE USERNAME")

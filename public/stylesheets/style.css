@@ -1,0 +1,115 @@
+
+.top{
+    width: 90%;
+    height: 120px;
+    position: fixed;
+    margin-left: 20px;
+    background-color: #fff;
+    z-index: 40;
+    top: 0;
+}
+.logo{
+    width: 58%;
+    float: right;
+    margin-top: 10px;
+}
+.title{
+    text-align: center;
+    display: inline;
+    font-size: 25px;
+}
+.logo-icon{
+    display: inline;
+    float: right;
+    margin-right: 18px;
+}
+.search-icon{
+    display: inline;
+}
+.search-group{
+    height: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    /*margin-left: 10px;*/
+    margin-top: 20px;
+}
+.search-box{
+    display: inline;
+}
+.search-box input{
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 66%;
+}
+.search-box span{
+    font-size: 18px;
+}
+
+.center{
+    width: 94%;
+    margin: 120px auto 80px;
+}
+.list-group{
+    padding-left: 0;
+    margin-bottom: 20px;
+    width: 93%;
+
+}
+.list-title{
+    margin: 2em 1em 0;
+    font-weight: 600;
+}
+.list a img{
+    width: 100%;
+    margin-top: 1em;
+}
+.carousel-inner{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 1em;
+}
+.price{
+    margin-top: 2em;
+    text-align: center;
+}
+.foot{
+    width: 100%;
+    height: 72px;
+    line-height: 38px;
+    bottom: 0;
+    position: fixed;
+    display: block;
+    background: white;
+}
+.mode{
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+.more img{
+    width: 100%;
+    margin-top: 1em;
+}
+.button{
+    text-align: center;
+    padding-top: 2em;
+}
+.button button{
+    background-color: #000;
+    border-style: none;
+    color: #fff;
+    border-radius: 6px;
+    width: 12em;
+    height: 35px;
+}
+#auto_div{
+    background-color: #fff;
+}
+
+
+
+
+
+

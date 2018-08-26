@@ -1,0 +1,36 @@
+doctype html
+html
+    head
+        title register
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0")
+        link(rel="stylesheet", href="stylesheets/style2.css")
+        script(src="javascripts/register.js")
+    body
+        .top
+            .top-left
+                a(href='login')
+                    img(src="images/l-t-l.svg", alt="")
+            .top-title
+                p PERSONAL INFORMATION
+            .top-right
+                a(href='')
+                    img(src="images/l-t-r.svg", alt="")
+    span #{errors}
+    .center
+        form(method="post", action="/register")
+            input(type="text", placeholder="E-MAIL", name="email", id="email", onblur="check_email()")
+            span(id="err_email")
+            input(type="text", placeholder="PASSWORD", name="pwd", id="pwd", onblur="check_pwd()")
+            span(id="err_pwd")
+            input(type="text", placeholder="CONFIRM PASSWORD", name="pwd1", id="pwd1", onblur="check_pwd1()")
+            span(id="err_pwd1")
+            input(type="text", placeholder="NAME", name="name", id="name", onblur="check_name()")
+            span(id="err_name")
+            input(type="text", placeholder="POSTCODE", name="postcode", id="postcode", onblur="check_postcode()")
+            span(id="err_postcode")
+            input(type="text", placeholder="CELL-PHONE NUMBER", name="number", id="number", onblur="check_number()")
+            span(id="err_number")
+            input(class="second-input", type="submit", value="SUBMIT", id="submit")
+
+
+

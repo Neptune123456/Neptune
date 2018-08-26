@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <link rel="stylesheet" href="stylesheets/style2.css">
+    <script src="javascripts/register.js"></script>
+  </head>
+  <body>
+    <div class="top">
+      <div class="top-left"><a href="login"><img src="images/l-t-l.svg" alt=""></a></div>
+      <div class="top-title">
+        <p>PERSONAL INFORMATION</p>
+      </div>
+      <div class="top-right"><a href=""><img src="images/l-t-r.svg" alt=""></a></div>
+    </div>
+  </body><span></span>
+  <div class="center">
+    <form method="post" action="/register">
+      <input type="text" placeholder="E-MAIL" name="email" id="email" onblur="check_email()"><span id="err_email"></span>
+      <input type="text" placeholder="PASSWORD" name="pwd" id="pwd" onblur="check_pwd()"><span id="err_pwd"></span>
+      <input type="text" placeholder="CONFIRM PASSWORD" name="pwd1" id="pwd1" onblur="check_pwd1()"><span id="err_pwd1"></span>
+      <input type="text" placeholder="NAME" name="name" id="name" onblur="check_name()"><span id="err_name"></span>
+      <input type="text" placeholder="POSTCODE" name="postcode" id="postcode" onblur="check_postcode()"><span id="err_postcode"></span>
+      <input type="text" placeholder="CELL-PHONE NUMBER" name="number" id="number" onblur="check_number()"><span id="err_number"></span>
+      <input class="second-input" type="submit" value="SUBMIT" id="submit">
+    </form>
+  </div>
+</html>
